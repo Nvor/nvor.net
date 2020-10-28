@@ -1,6 +1,6 @@
 # NvorNet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+Just a personal website built in Angular 10/Material.
 
 ## Development server
 
