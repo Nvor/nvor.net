@@ -1,0 +1,39 @@
+<div fxLayout="Row" fxLayoutAlign="space-evenly" class="start-card">
+    <mat-card fxFlex="1 1 50%" class="contact-card">
+        <div class="contact-card-header">
+            <h2>Contact Me</h2>
+            <p class="warning">**I've disabled this form since I don't actually want anybody to contact me from here..</p>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="contact-card-content">
+            <mat-toolbar>
+                <mat-toolbar-row>
+                    <span class="fill-space"></span>
+                    <button mat-icon-button (click)="clearForm()">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+            </mat-toolbar>
+            <div class="contact-form-container">
+                <form [formGroup]="contactForm" (ngSubmit)="onSend(contactForm)">
+                    <mat-form-field appearance="fill" class="form-element">
+                        <mat-label>Name</mat-label>
+                        <input matInput formControlName="name">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill" class="form-element">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill" class="form-element">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput formControlName="message"></textarea>
+                    </mat-form-field>
+                    <br>
+                    <button mat-raised-button type="submit" class="form-element">Send</button>
+                </form>
+            </div>
+        </div>
+    </mat-card>
+</div>

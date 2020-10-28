@@ -1,0 +1,24 @@
+.tool-cards-row {
+    padding-top: 30px;
+}
+
+.tool-cards-row mat-card {
+    padding: 0px;
+}
+
+mat-card img {
+    width: 100%;
+    padding-left: 16px;
+    height: auto;
+}
+
+mat-card-header {
+    margin-left: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+mat-card-content {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
