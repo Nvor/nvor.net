@@ -4,11 +4,47 @@ mat-nav-list a {
 }
 
 mat-nav-list a:hover {
-    background-color: purple;
-    color: plum;
+    background-color: rgb(65, 64, 64);
+    color: white;
     font-weight: bold;
+    padding-left: 20px;
 }
 
-// .list-item-active {
-//     background-color: grey;
-// }
+.mat-nav-list a.list-item-active {
+    background-color: rgb(65, 64, 64);
+    color: white;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+h2, h4 {
+    color: #ffffff;
+}
+
+.sidebar-top-content {
+    text-align: center;
+}
+
+.sidebar-image {
+    height: 10%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sidebar-top-content {
+    padding-bottom: 10px;
+}
+
+.router-link-items {
+    padding-top: 10px;
+}
+
+.mat-divider {
+    border-top-color: rgb(65, 65, 65);
+    border-width: 0.5px;
+}
+
+.router-link-items mat-icon {
+    padding-right: 20px;
+}
