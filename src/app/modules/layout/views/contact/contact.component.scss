@@ -1,3 +1,13 @@
+:host {
+    mat-toolbar {
+        background-color: #303030;
+    }
+
+    button {
+        background-color: white;
+    }
+}
+
 .contact-card {
     text-align: center;
 }
@@ -8,6 +18,11 @@
 
 .contact-form-container {
     padding-top: 15px;
+    background-color: #303030;
+    
+    mat-label {
+        color: #ffffff;
+    }
 }
 
 .warning {
@@ -18,4 +33,12 @@
 .form-element {
     padding: 5px 0px 5px 5px;
     width: 100%;
+}
+
+.contact-send-button {
+    margin-top: 10px;
+}
+
+.send-response {
+    color: red;
 }

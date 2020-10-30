@@ -12,6 +12,8 @@ import { AdvocacyComponent } from './views/advocacy/advocacy.component';
 import { DefaultComponent } from './views/default/default.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [
+    ContactService
   ]
 })
 export class LayoutModule { }

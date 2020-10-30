@@ -17,6 +17,18 @@ p {
     font-family: monospace;
 }
 
+
+.mat-card {
+    background-color: #242424;
+    color: darkgray;
+    // border-width: thin;
+    // border-style: solid;
+
+    mat-card-subtitle {
+        color: darkgray;
+    }
+}
+
 //refactor
 .start-card {
     padding-top: 30px;

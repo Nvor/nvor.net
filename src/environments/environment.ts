@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  tor_relay_api_url: '',
+  contact_url: ''
 };
 
 /*
