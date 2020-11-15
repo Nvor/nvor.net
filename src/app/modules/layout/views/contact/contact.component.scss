@@ -10,6 +10,7 @@
 
 .contact-card {
     text-align: center;
+    max-width: 50%;
 }
 
 .contact-card-content {
@@ -41,4 +42,10 @@
 
 .send-response {
     color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-card {
+        max-width: 90% !important;
+    }
 }

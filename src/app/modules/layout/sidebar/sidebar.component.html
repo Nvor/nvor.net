@@ -11,12 +11,17 @@
     <mat-divider></mat-divider>
     <div class="router-link-items">
         <a mat-list-item routerLinkActive="list-item-active" routerLink="" [routerLinkActiveOptions]="{ exact: true }">
-            <mat-icon>face</mat-icon>
-            nvor
+            <div class="nav-link-item">
+                <mat-icon>face</mat-icon>
+                nvor
+            </div>
         </a>
         <a mat-list-item routerLinkActive="list-item-active" routerLink="/tor">
-            <mat-icon>visibility_off</mat-icon>
-            tor</a>
+            <div class="nav-link-item">
+                <mat-icon>visibility_off</mat-icon>
+                tor
+            </div>
+        </a>
         <a mat-list-item routerLinkActive="list-item-active" routerLink="/infrastructure">
             <mat-icon>vpn_lock</mat-icon>
             infra</a>
