@@ -13,7 +13,6 @@ mat-card img {
 }
 
 mat-card-header {
-    margin-left: 20%;
     text-align: center;
     padding: 10px;
 }
@@ -21,4 +20,24 @@ mat-card-header {
 mat-card-content {
     padding-left: 10px;
     padding-bottom: 10px;
+}
+.advo-info-card {
+    max-width: 66%;
+}
+
+.example-card {
+    max-width: 20%;
+}
+
+@media only screen and (max-width: 992px) {
+    .tool-cards-row {
+        flex-wrap: wrap;
+    }
+    .advo-info-card {
+        max-width: 90% !important;
+    }
+    .example-card {
+        max-width: 90% !important;
+        margin-bottom: 20px !important;
+    }
 }

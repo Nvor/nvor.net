@@ -17,7 +17,6 @@ p {
     font-family: monospace;
 }
 
-
 .mat-card {
     background-color: #242424;
     color: darkgray;
@@ -33,3 +32,21 @@ p {
 .start-card {
     padding-top: 30px;
 }
+
+.mat-card-header-text {
+    margin: 0 auto !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+        display: block !important;
+        text-align: center !important;
+        padding: 0 2px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-size: 10px !important;
+    }
+    .mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+        height: 100% !important;
+    }
+  }

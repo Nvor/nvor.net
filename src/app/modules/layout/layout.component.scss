@@ -19,3 +19,14 @@ mat-drawer {
     border-color: #686868;
     border-width: 0.5px;
 }
+@media only screen and (max-width: 768px) {
+    mat-drawer-container {
+        margin-left: 0 !important;
+    }
+    mat-drawer {
+        width: 50px !important;
+    }
+    .mat-drawer-content {
+        margin-left: 50px !important;
+    }
+}

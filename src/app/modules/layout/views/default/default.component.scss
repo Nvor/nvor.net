@@ -1,5 +1,6 @@
 .def-header {
     text-align: center;
+    max-width: 50%;
 }
 
 .links {
@@ -12,4 +13,9 @@
 
 .links div {
     display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+    .def-header {
+        max-width: 90% !important;
+    }
 }
