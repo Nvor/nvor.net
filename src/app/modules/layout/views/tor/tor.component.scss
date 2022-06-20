@@ -2,6 +2,20 @@
     word-wrap: break-word;
 }
 
+.link-section {
+    padding: 5px 0px 20px 0px;
+}
+
+.link-section:hover {
+    border: solid 1px #ffffff;
+    border-radius: 20px;
+}
+
+.link-type {
+    font-size: 14px;
+    text-align: center;
+}
+
 a {
     color: #ffffff;
 }
