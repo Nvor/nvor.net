@@ -8,6 +8,7 @@ mat-nav-list a:hover {
     color: white;
     font-weight: bold;
     padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .mat-nav-list a.list-item-active {
@@ -33,11 +34,7 @@ h2, h4 {
 }
 
 .sidebar-top-content {
-    padding-bottom: 10px;
-}
-
-.router-link-items {
-    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .mat-divider {
