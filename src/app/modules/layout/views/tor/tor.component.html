@@ -2,13 +2,19 @@
     <mat-card fxFlex="1 1 50%" class="def-header" style="word-wrap: break-word;text-align: center;">
         <img src="assets/images/tor-white.png">
         <p>To keep track of any Tor relays and onions I'm operating.</p>
-        <div *ngFor="let relay of relays" class="link-section">
+
+        <div class="link-section">
             <p class="link-type">Active Tor Relays:</p>
-            <a class="temp-node-link" href="{{ relay }}" target="blank_">{{ relay }}</a>    
+            <div *ngFor="let relay of relays">
+                <a class="temp-node-link" href="{{ relay }}" target="blank_">{{ relay }}</a>    
+            </div>
         </div>
-        <div *ngFor="let onion of onions" class="link-section">
+        
+        <div class="link-section">
             <p class="link-type">Onions / hidden sites</p>
-            <a class="temp-node-link" href="{{ onion }}" target="blank_">{{ onion }}</a>
+            <div *ngFor="let onion of onions">
+                <a class="temp-node-link" href="{{ onion }}" target="blank_">{{ onion }}</a>
+            </div>
         </div>
     </mat-card>
 </div>
