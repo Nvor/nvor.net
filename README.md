@@ -1,6 +1,6 @@
 # NvorNet
 
-Just a personal website built in Angular 11/Material.
+Just a personal website built in Angular 13.
 
 ## Development server
 
