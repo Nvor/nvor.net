@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { ContactService } from '../../services/contact.service';
 
 @Component({
@@ -8,12 +8,12 @@ import { ContactService } from '../../services/contact.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  contactForm: FormGroup;
+  contactForm: UntypedFormGroup;
   sendResponse: string;
   showResponse: boolean;
 
   constructor(
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private contactService: ContactService
   ) { }
 
@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
     })
   }
 
-  onSend(form: FormGroup) {
+  onSend(form: UntypedFormGroup) {
     console.log('Valid?', form.valid);
     
     this.sendResponse = 'I told you, I disabled this form!'
