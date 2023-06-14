@@ -8,6 +8,9 @@ import { AlertComponent } from './alert/alert.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    AlertComponent
   ]
 })
 export class SharedModule { }
