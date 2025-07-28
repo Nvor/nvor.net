@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "nvor-net:build"
+            "buildTarget": "nvor-net:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "nvor-net:build:production"
+              "buildTarget": "nvor-net:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nvor-net:build"
+            "buildTarget": "nvor-net:build"
           }
         },
         "test": {
