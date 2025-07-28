@@ -19,40 +19,34 @@ import { AdvocacyComponent } from './views/advocacy/advocacy.component';
 import { DefaultComponent } from './views/default/default.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ContactService } from './services/contact.service';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-@NgModule({
-  declarations: [
-    LayoutComponent,
-    HeaderComponent,
-    SidebarComponent,
-    TorComponent,
-    InfrastructureComponent,
-    AdvocacyComponent,
-    DefaultComponent,
-    ContactComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatListModule,
-    MatCardModule,
-    MatDividerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule,
-    SharedModule
-  ],
-  providers: [
-    ContactService
-  ]
-})
+@NgModule({ declarations: [
+        LayoutComponent,
+        HeaderComponent,
+        SidebarComponent,
+        TorComponent,
+        InfrastructureComponent,
+        AdvocacyComponent,
+        DefaultComponent,
+        ContactComponent
+    ], imports: [CommonModule,
+        RouterModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatListModule,
+        MatCardModule,
+        MatDividerModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        FormsModule,
+        SharedModule], providers: [
+        ContactService,
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class LayoutModule { }
