@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tor',
-  templateUrl: './tor.component.html',
-  styleUrls: ['./tor.component.scss']
+    selector: 'app-tor',
+    templateUrl: './tor.component.html',
+    styleUrls: ['./tor.component.scss'],
+    standalone: false
 })
 export class TorComponent implements OnInit {
   relays: string[];
