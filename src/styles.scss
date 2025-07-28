@@ -1,4 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and all other style files */
+
+.flex-30 {
+    flex: 1 1 30%;
+    max-width: 30%;
+    min-width: 200px;
+}
+
+.flex-50 {
+    flex: 1 1 50%;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+/* Flexbox utilities */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-50 {
+    flex: 1 1 50%;
+}
+
+.flex-66 {
+    flex: 1 1 66%;
+}
+
+.flex-20 {
+    flex: 1 1 20%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-gap-20 {
+    gap: 20px;
+}
+
+/* Container for card rows with proper spacing */
+.flex-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .flex-20 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .flex-50 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .flex-66 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .flex-row {
+        flex-direction: column;
+    }
+}
 
 html, body { 
     height: 100%; 
