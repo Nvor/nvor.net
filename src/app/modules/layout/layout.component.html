@@ -1,14 +1,16 @@
 <mat-drawer-container>
-    <mat-drawer mode="side" opened="true">
-        <app-sidebar></app-sidebar>
-    </mat-drawer>
-    <mat-drawer-content>
-        <app-header></app-header>
-        <router-outlet></router-outlet>
-        <div class="alert-container">
-            <app-alert *ngIf="message"
-                [message]="message"
-            ></app-alert>
-        </div>
-    </mat-drawer-content>
+  <mat-drawer mode="side" opened="true">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <div class="alert-container">
+      @if (message) {
+        <app-alert
+          [message]="message"
+        ></app-alert>
+      }
+    </div>
+  </mat-drawer-content>
 </mat-drawer-container>

@@ -1,20 +1,24 @@
 <div class="flex-cards-container start-card">
-    <mat-card class="flex-50 def-header" style="word-wrap: break-word;text-align: center;">
-        <img src="assets/images/tor-white.png">
-        <p>To keep track of any Tor relays and onions I'm operating.</p>
+  <mat-card class="flex-50 def-header" style="word-wrap: break-word;text-align: center;">
+    <img src="assets/images/tor-white.png">
+    <p>To keep track of any Tor relays and onions I'm operating.</p>
 
-        <div class="link-section">
-            <p class="link-type">Active Tor Relays:</p>
-            <div *ngFor="let relay of relays">
-                <a class="temp-node-link" href="{{ relay }}" target="blank_">{{ relay }}</a>    
-            </div>
+    <div class="link-section">
+      <p class="link-type">Active Tor Relays:</p>
+      @for (relay of relays; track relay) {
+        <div>
+          <a class="temp-node-link" href="{{ relay }}" target="blank_">{{ relay }}</a>
         </div>
-        
-        <div class="link-section">
-            <p class="link-type">Onions / hidden sites</p>
-            <div *ngFor="let onion of onions">
-                <a class="temp-node-link" href="{{ onion }}" target="blank_">{{ onion }}</a>
-            </div>
+      }
+    </div>
+
+    <div class="link-section">
+      <p class="link-type">Onions / hidden sites</p>
+      @for (onion of onions; track onion) {
+        <div>
+          <a class="temp-node-link" href="{{ onion }}" target="blank_">{{ onion }}</a>
         </div>
-    </mat-card>
+      }
+    </div>
+  </mat-card>
 </div>
